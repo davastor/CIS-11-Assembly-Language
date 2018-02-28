@@ -1,0 +1,45 @@
+1.1.3
+
+1.)An assembler converts source-code programs into machine language.  
+   A linker then combines those individual files into a single executable program.
+3.)A single statement in a high-level language expands into multiple assembly language or machine instructions.
+8.)You cannot assign a pointer of one type to a pointer of another type in C or C++, whereas in assembly, there are no such restrictions.
+12.)mov eax, y
+    mov ebx, 4
+    imul ebx
+    add eax, 3
+    mov x, eax
+    
+1.2.1
+2.)A computer is made up of levels or layers of instruction sets or processing.  Each level of processing can be represented by
+   a "virtual machine" that operates using a particular language that it supports at that layer.  The lowest level of processing may be 
+   written in a language that is perhaps too cumbersome for people to manipulate.  Hence, a higher level "virtual machine", 
+   with a more accessible language, is used to allow people to input their commands with greater ease.  
+   That higher level instruction set is then translated back down to the lower level for the computer to process.  
+   Even higher level "virtual machines" may be used for increased accessbility, if need be.
+3.)True
+10.)Level 2 - Instruction Set Architecture
+
+1.3.9
+2a.)248
+ b.)202
+ c.)240
+3a.)00010001
+ b.)101000000 
+ c.)00011110
+5a.)7 bits
+ b.)9 bits
+ c.)15 bits
+6a.)35DA
+ b.)CEA3
+ c.)FEDB
+7a.)1010 0100 0110 1001 0011 1111 1011 1100  
+ b.)1011 0110 1001 0111 1100 0111 1010 0001
+ c.)0010 1011 0011 1011 1001 0100 0110 0001 
+ 
+ 
+ 1.7.1
+ 
+ 1.) The MSB is the left most bit.
+ 2a.)53
+  b.)150
