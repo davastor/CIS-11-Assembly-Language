@@ -8,4 +8,24 @@
 
 2.4.3
 
-5.)
+5)The 8259A PIC controller handles input/interrupts from hardware devices such as the keyboard and disk drive
+
+2.5.2
+
+1)The application program
+3)The BIOS cannot be written in anticipation for new devices or hardware with new capabilities
+4)The BIOS level
+5)No, the BIOS should work for both operating systems
+
+2.8
+
+7)Floating point unit
+8)80 bits
+9)True
+10)False
+12)False
+19)False
+20)False
+25)OS, BIOS, and Hardware
+26)It would give the program more control and make execute faster
+
