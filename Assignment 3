@@ -1,0 +1,61 @@
+3.1.11
+1)-35d, DDh, 335o, 11011101b
+2)No
+3)No
+4)(10+2)-(3*4)/2 MOD 3 =  12
+
+3.2.4--------------------------------------------------------------
+4)eax
+5)INVOKE ExitProcess, 0
+
+3.3.3--------------------------------------------------------------
+1)Object and Listing files
+2)True
+3)True
+4)Loader
+
+3.4.13-------------------------------------------------------------
+1)variable SWORD ?
+2)variable BYTE ?
+3)variable SBYTE ?
+4)variable QWORD ?
+5)SDWORD
+
+3.5.5---------------------------------------------------------------
+3) ArraySize = ($ - myArray)
+
+3.9.1---------------------------------------------------------------
+4)The assembler is the program that translates your code into machine language.  
+5)Little endian places the least significant bit in the rightmost position of the number.  Big endian places it in the leftmost position.
+6)Symbolic constants allow for better documentation, as we can name values after specific meanings,
+   such as calling a value ArraySize, rather than leaving it as an integer literal.  Readers of the 
+   code will be able to understand the meaning and purpose of the value this way.  
+25)SDWORD
+
+3.9.2---------------------------------------------------------------
+4)The assembler does not check the number's sign.
+7)myArray DWORD 120 DUP(?)
+13)stringVar BYTE 500 DUP("TEST")
+
+3.10----------------------------------------------------------------
+1)ExitProcess PROTO
+
+.data
+.code
+
+main proc
+
+	mov rax, 10
+	mov rbx, 5
+	mov rcx, 6
+	mov rdx, 4
+
+	add rax, rbx
+	sub rax, rcx
+	sub rax, rdx
+	call ExitProcess
+
+main endp
+end
+   
+   
