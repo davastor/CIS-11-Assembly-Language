@@ -8,3 +8,21 @@
 6a) Carry = 1, Sign = 0, Zero = 1, Overflow = 0
  b) Carry = 0, Sign = 1, Zero = 0, Overflow = 1
  c) Carry = 0, Sign = 1, Zero = 0, Overflow = 0
+
+4.3.8 
+1)false
+2)false
+3)true
+4)false
+5)true
+
+4.4.5 
+4)true
+5a)10h
+ b)40h
+ c)003Bh
+ d)3
+ e)3
+ f)2
+ 
+ 4.7
