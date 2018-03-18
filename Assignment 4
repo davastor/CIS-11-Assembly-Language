@@ -1,0 +1,10 @@
+4.2.8 
+1)inc val2
+2)sub eax, val3
+3)mov eax, val4
+  sub val2, eax
+4)Carry Flag = 0 , Sign Flag = 1
+5)Overflow Flag = 1, Sign flag = 1
+6a) Carry = 1, Sign = 0, Zero = 1, Overflow = 0
+ b) Carry = 0, Sign = 1, Zero = 0, Overflow = 1
+ c) Carry = 0, Sign = 1, Zero = 0, Overflow = 0
