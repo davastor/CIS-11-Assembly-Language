@@ -1,0 +1,25 @@
+ExitProcess PROTO
+
+.data
+myArray QWORD 1, 2, 3, 4, 5, 6
+
+.code
+main proc
+	mov rsi, 0
+	mov rcx, LENGTHOF myArray
+
+L1:
+	mov rbx, myArray[rsi]
+	mov rdx, myArray[rsi+8]
+	mov myArray[rsi], rdx
+	mov myArray[rsi+8], rbx 
+
+	add rsi, 16
+
+	LOOP L1
+
+
+
+call ExitProcess
+main endp
+end
