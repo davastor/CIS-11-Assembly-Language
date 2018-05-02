@@ -1,8 +1,50 @@
+7)------------------------------------------------------------------------ **I used RandomRange instead of Random64
+ExitProcess PROTO
+Crlf PROTO
+ReadInt64 PROTO
+WriteString PROTO
+WriteInt64 PROTO
+RandomRange PROTO
+Randomize PROTO
+
+.data
+intro BYTE "Welcome to the DICE roller!", 0
+request BYTE "Please enter your desired number of sides: ", 0
+result BYTE "Result: ", 0
+sides QWORD ?
+
+.code
+main proc
+
+	call Randomize
+
+	mov rdx, OFFSET intro
+	call WriteString
+	call Crlf
+
+	mov rdx, OFFSET request
+	call WriteString
+	call ReadInt64
+	mov sides, rax
+	call Crlf
+
+	mov rdx, OFFSET result
+	call WriteString
+	mov eax, DWORD PTR sides
+	call RandomRange
+
+	inc rax
+	call WriteInt64
+	
+
+	
+	call ReadInt64
 
 
 
-
-
+call ExitProcess
+main endp
+end
 
 
 
