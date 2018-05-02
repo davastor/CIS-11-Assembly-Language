@@ -1,32 +1,54 @@
+
+
+
+
+
+
+
+
+
+10)-----------------------------------------------------------------------
+
 ExitProcess PROTO
 fibGenerator PROTO
+WriteInt64 PROTO
+Crlf PROTO
+ReadInt64 PROTO
 
 .data
-fibArray QWORD 1, 2, 3, 4, 5, 6
+fibArray QWORD 47 DUP(0)
 
 
 .code
 main proc
-	mov rcx, 47
+	mov ecx, 45
 	mov rsi, 0
 	mov fibArray[rsi], 1
 	mov fibArray[rsi+8], 1
 	call fibGenerator
 
 fibGenerator proc
+	mov rax, 1
+	call WriteInt64
+	call Crlf
+	call WriteInt64	
+	call Crlf
+
 	L1: 
 		mov rax, 0
 		mov rax, fibArray[rsi]
 		add rax, fibArray[rsi+8]
 		mov fibArray[rsi+16], rax
 		add rsi, 8
+
+		call WriteInt64
+		call Crlf
+
 		LOOP L1
 	
-	ret
+	call ReadInt64
+	call ExitProcess
 fibGenerator endp	
 
-
-
-call ExitProcess
 main endp
 end
