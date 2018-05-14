@@ -1,0 +1,7 @@
+
+2) A calling convention is the way that parameters are passed to subroutines, and how the stack is restored after calling the subroutine.
+3) They are pushing the data stored in ebp to the stack, so that it remains in memory somewhere.  
+   Then they can move other data into ebp temporarily.
+4)push rbp     
+  mov rbp, rsp
+5)
