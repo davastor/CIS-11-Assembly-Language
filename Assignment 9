@@ -1,7 +1,16 @@
 
+1) A stack frame is the area of the stack that is set aside for passed arguments, return addresses, local variables, and saved registers
 2) A calling convention is the way that parameters are passed to subroutines, and how the stack is restored after calling the subroutine.
 3) They are pushing the data stored in ebp to the stack, so that it remains in memory somewhere.  
    Then they can move other data into ebp temporarily.
 4)push rbp     
   mov rbp, rsp
-5)
+5)In the Microsoft x64 Calling Convention, the first four integer or pointer arguments are stored in RCX, RDX, R8, R9.
+  Users must allocate 32 bytes of "shadow space" on the stack right before calling a function and pop the stack after the call.  
+  
+  In the System V AMD64 ABI calling convention, the first six integer or pointer arguments are stored in RDI, RSI, RDX, RCX, R8, and R(.
+  A "shadow space" is not needed; the return address is adjacent to the seventh integer argument on the stack.
+  
+6)First four integers a, b, c, d are stored into registers.  e and f are pushed onto the stack.
+
+
