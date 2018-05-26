@@ -117,3 +117,12 @@
 	}
 	
 	return binary;
+	
+	
+1.4.2
+
+1)(NOT X) OR Y
+2) X AND Y
+3) T
+4) F
+5) T
